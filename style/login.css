@@ -31,7 +31,8 @@
 /* loading animation  */
 .lds-hourglass {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  top: 0;
   width: 35px;
   height: 35px;
 }
@@ -152,6 +153,7 @@
 }
 
 .login-mobile {
+    position: relative;
     width: 100%;
     height: 56px;
     margin: 35px 0;
@@ -321,22 +323,37 @@ input[type=checkbox] {
     bottom: 71px;
 }
 
-.login button {
+.login {
+    position: relative;
     width: 100%;
     height: 64px;
-    text-transform: uppercase;
-    font-size: 22px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
+    text-transform: uppercase;
     border: 1px solid #FE8E66;;
     border-radius: 5px;
     background-color: #FE8E66;
     color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 600;
     text-align: center;
     line-height: 22px;
-    position: relative;
+    /*display: grid;
+    align-content: center;
+    justify-content: center;*/
     bottom: 40px;
-    left: 0;
+    //left: 0;
+}
+
+.login-desktop {
+  border: none;
+  background: none;
+  font-size: 22px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  background-color: #FE8E66;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 22px;
 }
 
 .google-sign-in button, .apple-sign-in button {

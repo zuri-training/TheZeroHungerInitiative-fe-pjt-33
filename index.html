@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./style/login.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <!--Mobile View-->
@@ -25,7 +26,7 @@
                 <div class="password-mobile">
                     <label for="password-mobile">Password</label>
                     <input type="password" name="password-mobile" id="password-mobile" placeholder="Password" required>
-                    <a href="./../forgot-password/reset.html">forgot password?</a>
+                    <a href="forgot-password.html">forgot password?</a>
                 </div>
 
                 <button class="login-mobile">Login</button>
@@ -43,13 +44,13 @@
         <header class="header-desk-top">
             <ul>
                 <li><a href="#"> <img src="./images/arrow.png" alt="arrow icon"> Back</a></li>
-                <li><a href="#">create account</a></li>
+                <li><a href="sign-up.html">create account</a></li>
             </ul>
         </header>
         <form action="#" class="form-desk-top">
             <div class="email">
-                <label for="email">Email Address</label>
-                <input type="email" name="emailAddress" id="email" placeholder="Enter email address" required>
+                <label for="email">Username</label>
+                <input type="text" name="emailAddress" id="email" placeholder="Enter your username" required>
                 <img src="./images/message-icon.png" alt="email icon">
             </div>
 
@@ -63,13 +64,14 @@
                 <input type="checkbox" name="remember-me" id="remember-me">
                 <label for="remember-me">remember me</label>
 
-                <a href="#">forgot password?</a>
+                <a href="forgot-password.html">forgot password?</a>
             </div>
 
-            <div class="login">
-                <button>log in</button>
-            </div>
-
+            <button class="login">
+              log in
+                <!--<button class="login-desktop">log in</button>-->
+            </button>
+            <!--
             <div class="google-sign-in">
                 <button>Sign in with Google</button>
                 <img src="./images/google-icon.png" alt="google favicon">
@@ -78,9 +80,9 @@
             <div class="apple-sign-in">
                 <button>Sign in with Apple</button>
                 <img src="./images/apple-icon.png" alt="apple icon">
-            </div>
+            </div>-->
         </form>
     </div>
-    <script src="login.js"></script>
+    <script src="js/user-auth.js"></script>
 </body>
 </html>
