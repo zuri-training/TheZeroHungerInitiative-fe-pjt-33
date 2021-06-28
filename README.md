@@ -18,8 +18,8 @@
 
 ## 4 - Navigate to it in the terminal. Run 'git clone(github link)'
 
-## 5 - Create a branch for your Task 'git checkout -b <branchname>
+## 5 - Create a branch for your Task 'git checkout -b <branchname>'
 
-## 6 - After changes - git add , - git commit m 'some comments' , - git push origin <name of your branch>
+## 6 - After changes - git add , - git commit m 'some comments' , - git push origin (name of your branch)
 
 ## 7 - Create a Pull Request
