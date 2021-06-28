@@ -1,88 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="./style/login.css">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</head>
-<body>
-    <!--Mobile View-->
-    <div class="wrapper-mobile">
-        <form action="#">
-            <header class="header-mobile">
-                <h1>Zero Hunger</h1>
-                <p>Feed someone today!</p>
-            </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <div class="body-form">
-                <div class="username-mobile">
-                    <label for="username">Username</label>
-                    <input type="text" name="username-mobile" id="username-mobile" placeholder="Enter your username" required>
-                </div>
+    <link rel="stylesheet" href="./style/index.css" />
 
-                <div class="password-mobile">
-                    <label for="password-mobile">Password</label>
-                    <input type="password" name="password-mobile" id="password-mobile" placeholder="Password" required>
-                    <a href="forgot-password.html">forgot password?</a>
-                </div>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/bb11d8c58c.js"
+      crossorigin="anonymous"
+    ></script>
 
-                <button class="login-mobile">Login</button>
+    <title>Zero Hunger - End Poverty Now</title>
+  </head>
 
-                <button class="sign-up-mobile">Sign Up</button>
-            </div>
-        </form>
-    </div>
+  <body>
+    <script>
+      const handleToggle = () => {
+        let sideNav = document.querySelector(".sideNavHidden");
+        let close = document.querySelector("#close");
+        let open = document.querySelector("#open");
+        sideNav.classList.toggle("sideNav");
+        let openStyle = getComputedStyle(open);
+        let openDisplay = openStyle.display;
+        if (openDisplay === "block") {
+          open.style.display = "none";
+          close.style.display = "block";
+        } else {
+          open.style.display = "block";
+          close.style.display = "none";
+        }
+      };
+    </script>
 
+    <header>
+      <a href="#"> <div class="header-logo"></div></a>
+      <div class="header-links">
+        <a href="#">HOME</a> <a href="#">ABOUT US</a>
+        <a href="#">DONATE</a>
+        <a href="#">VOLUNTEER</a>
+        <a href="./login.html"><button class="login-button">Login</button></a>
+      </div>
+      <span
+        class="iconify"
+        data-icon="heroicons-outline:menu-alt-3"
+        data-inline="false"
+        style="color: #fe8e66"
+        id="open"
+        onclick="handleToggle()"
+      ></span>
+      <span
+        class="iconify"
+        data-icon="akar-icons:cross"
+        data-inline="false"
+        style="color: #fe8e66"
+        id="close"
+        onclick="handleToggle()"
+      ></span>
 
+      <section class="sideNavHidden">
+        <a href="#">
+          <span class="resetColor"> <i class="fas fa-home"></i>BACK HOME </span>
+        </a>
 
+        <a href="#">
+          <span class="resetColor"> <i class="fas fa-users"></i>ABOUT US </span>
+        </a>
 
-    <!--Desk-top View-->
-    <div class="wrapper-desk-top">
-        <header class="header-desk-top">
-            <ul>
-                <li><a href="#"> <img src="./images/arrow.png" alt="arrow icon"> Back</a></li>
-                <li><a href="sign-up.html">create account</a></li>
-            </ul>
-        </header>
-        <form action="#" class="form-desk-top">
-            <div class="email">
-                <label for="email">Username</label>
-                <input type="text" name="emailAddress" id="email" placeholder="Enter your username" required>
-                <img src="./images/message-icon.png" alt="email icon">
-            </div>
+        <a href="#">
+          <span class="resetColor">
+            <i class="fas fa-hand-holding-heart"></i>DONATE
+          </span>
+        </a>
 
-            <div class="password">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Enter password" required> 
-                <img src="./images/lock-icon.png" alt="lock icon" class="lock-icon">
-                <img src="./images/eye-icon.png" alt="eye-icon" class="eye-icon">
-                <img src="./images/eye-pupil-icon.png" alt="pupil icon" class="pupil-icon">
+        <a href="#">
+          <span class="resetColor">
+            <i class="fas fa-people-carry"></i>VOLUNTEER
+          </span>
+        </a>
 
-                <input type="checkbox" name="remember-me" id="remember-me">
-                <label for="remember-me">remember me</label>
+        <a href="./login.html"><button class="login-button">LOGIN</button></a>
+      </section>
+    </header>
 
-                <a href="forgot-password.html">forgot password?</a>
-            </div>
+    <main>
+      <article class="banner1-pic">
+        <h1 class="banner1-title">
+          Help Put Food And A Smile on Someone's Table Today
+        </h1>
+        <div>
+          <button class="donate-button1">DONATE FOOD ITEMS</button>
+          <button class="donate-button2">DONATE FUNDS</button>
+        </div>
+      </article>
+      <article class="about">
+        <h1>About Us</h1>
+        <p>
+          We at zero hunger are aimed at eliminating hunger in our communities,
+          one day at a time!
+        </p>
 
-            <button class="login">
-              log in
-                <!--<button class="login-desktop">log in</button>-->
-            </button>
-            <!--
-            <div class="google-sign-in">
-                <button>Sign in with Google</button>
-                <img src="./images/google-icon.png" alt="google favicon">
-            </div>
+        <p>
+          We do this this with the Aim of reducing hunger induced crimes and
+          killings as well as prevent malnourishment of indigent kids in the
+          society due to lack of good food and proper nutrition <br />
+          read more.... .
+        </p>
+      </article>
 
-            <div class="apple-sign-in">
-                <button>Sign in with Apple</button>
-                <img src="./images/apple-icon.png" alt="apple icon">
-            </div>-->
-        </form>
-    </div>
-    <script src="js/user-auth.js"></script>
-</body>
+      <article class="banner2-pic">
+        <h1 class="banner2-title">
+          Can’t Donate Food? <br />
+          Don’t Worry, You can Still Be of Help.
+        </h1>
+        <div>
+          <p>
+            We absolutely understand if you aren’t one for stocking up on
+            foodstuff regularly, there is another way you can bless someone,
+            through your money! Our organisation also makes provision for cash
+            donations. This way, we make sure no one gets left out.
+          </p>
+          <button class="donate-button3">DONATE CASH</button>
+        </div>
+      </article>
+
+      <article class="banner3-pic">
+        <h1 class="banner3-title">
+          Eliminate hunger, one donation at a <br />
+          time!
+        </h1>
+        <div>
+          <p>
+            Due to the ever rising inflation in the nigerian economy, a high
+            percentage of the population find it increasingly difficult to feed
+            as well as they should. We at the zero hunger initiative have found
+            that sharing from what we have, no matter how little, helps to make
+            our world a better place.
+          </p>
+          <button class="donate-button3">DONATE FOOD ITEMS</button>
+        </div>
+      </article>
+
+      <article class="food-list">
+        <h1>Having A Hard Time Deciding What To Donate?</h1>
+        <p>Here’s a list of highly demanded food items</p>
+        <ul>
+          <li>Rice</li>
+          <li>Sweet Potato</li>
+          <li>Cubes</li>
+          <li>Beverages</li>
+          <li>Milk</li>
+          <li>Yam</li>
+          <li>Semovita</li>
+          <li>Vegetable Oil</li>
+          <li>Flour</li>
+          <li>Cooking Flour</li>
+          <li>Cereals</li>
+          <li>Beans</li>
+          <li>Noodles</li>
+          <li>Wheat</li>
+          <li>Garri</li>
+          <li>Egusi</li>
+          <li>Oil</li>
+          <li>Conflakes</li>
+          <li>Eggs</li>
+          <li>Tomato</li>
+        </ul>
+      </article>
+
+      <article class="payment-partners">
+        <h1>Supported Payment Partners</h1>
+        <aside>
+          <div class="pic1"></div>
+          <div class="pic2"></div>
+          <div class="pic3"></div>
+        </aside>
+      </article>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>
