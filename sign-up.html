@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Page</title>
     <link rel="stylesheet" href="style/sign-up.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <!--Mobile View-->
@@ -27,12 +28,59 @@
 
         <main class="form-body-mobile">
           <div class="username-mobile">
-            <label for="username">preferred username</label>
+            <label for="firstName">First Name</label>
             <input
               type="text"
               name="username"
-              id="username"
-              placeholder="enter your preferred username"
+              id="firstname-mobile"
+              placeholder="enter your first name"
+              required
+            />
+          </div>
+          <div class="username-mobile">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastname-mobile"
+              placeholder="enter your last name"
+              required
+            />
+          </div>
+          <div class="username-mobile">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username-mobile"
+              placeholder="enter your username"
+              required
+            />
+          </div>
+          <div class="username-mobile">
+            <label for="username">Gender</label>
+            <select id="gender-mobile" required>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+          <div class="username-mobile">
+            <label for="username">Address</label>
+            <input
+              type="text"
+              name="address"
+              id="address-mobile"
+              placeholder="enter your Address"
+              required
+            />
+          </div>
+          <div class="username-mobile">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email-mobile"
+              placeholder="enter your Email"
               required
             />
           </div>
@@ -42,36 +90,46 @@
             <input
               type="number"
               name="phoneNumber"
-              id="phoneNumber"
+              id="phonenumber-mobile"
               placeholder="enter your phone number"
               required
             />
           </div>
 
           <div class="set-password-mobile">
-            <label for="setPassword">set password</label>
+            <label for="setPassword">Password</label>
             <input
               type="password"
-              name="password"
-              id="setPassword"
+              name="password-mobile"
+              id="password-mobile"
               placeholder="enter your password"
               required
             />
+          </div>
+          <div class="set-password-mobile">
+            <label for="setPassword">Password Confirm</label>
+            <input
+              type="password"
+              name="password"
+              id="password-confirm-mobile"
+              placeholder="enter your password confirm"
+              required
+            />
 
-            <input type="checkbox" name="showPassword" id="showPassword" />
-            <label for="showPassword">show password</label>
+            <!--<input type="checkbox" name="showPassword" id="showPassword" />
+            <label for="showPassword">show password</label>-->
           </div>
 
           <div class="sign-up-mobile">
-            <button>sign up</button>
+            sign up
           </div>
-
+<!--
           <hr class="left" />
 
           <h3>or</h3>
 
           <hr class="right" />
-
+          
           <div class="continue-google">
             <button>Continue with Google</button>
             <img src="./images/google-icon.png" alt="google favicon" />
@@ -81,8 +139,8 @@
             <button>Continue with Apple</button>
             <img src="./images/apple-icon.png" alt="apple icon" />
           </div>
-
-          <h4>Already have an account? <a href="#">Login</a></h4>
+-->
+          <h4>Already have an account? <a href="login.html">Login</a></h4>
         </main>
       </form>
     </section>
@@ -97,7 +155,7 @@
               ><img src="./images/arrow.png" alt="back arrow icon" />Back</a
             >
           </li>
-          <li><a href="#">LOG IN</a></li>
+          <li><a href="login.html">LOG IN</a></li>
         </ul>
       </header>
 
@@ -123,6 +181,17 @@
             name="lastName"
             id="lastName"
             placeholder="enter your last name"
+            required
+          />
+          <img src="./images/person-icon.png" alt="person icon" />
+        </div>
+        <div class="lastName-desktop">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="enter your username name"
             required
           />
           <img src="./images/person-icon.png" alt="person icon" />
@@ -154,7 +223,7 @@
 
         <div class="gender-desktop">
           <label for="gender">gender</label>
-          <input
+          <!--<input
             type="text"
             name="userGender"
             id="gender"
@@ -162,7 +231,11 @@
             required
           />
           <img src="./images/person-icon.png" alt="person icon" />
-          <img src="./images/arrow-down-icon.png" alt="arrow down icon">
+          <img src="./images/arrow-down-icon.png" alt="arrow down icon">-->
+          <select id="gender" required>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
         </div>
 
         <div class="address-desktop">
@@ -203,8 +276,9 @@
           <img src="./images/eye-invisible-icon.png" alt="invisible eye icon" />
         </div>
 
-        <button>create account</button>
+        <button class="signup-desktop">create account</button>
       </form>
     </section>
+    <script src="js/signup.js"></script>
   </body>
 </html>
