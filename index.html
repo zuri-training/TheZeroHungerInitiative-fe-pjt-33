@@ -37,9 +37,20 @@
           close.style.display = "none";
         }
       };
+
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("head").style.position = "relative";
+        } else {
+          document.getElementById("head").style.position = "fixed";
+        }
+        prevScrollpos = currentScrollPos;
+      };
     </script>
 
-    <header>
+    <header id="head">
       <a href="#"> <div class="header-logo"></div></a>
       <div class="header-links">
         <a href="#">HOME</a> <a href="#">ABOUT US</a>
@@ -117,7 +128,8 @@
       <article class="banner2-pic">
         <h1 class="banner2-title">
           Can’t Donate Food? <br />
-          Don’t Worry, You can Still Be of Help.
+          Don’t Worry, <br />
+          You can Still Be of Help.
         </h1>
         <div>
           <p>
@@ -148,7 +160,10 @@
       </article>
 
       <article class="food-list">
-        <h1>Having A Hard Time Deciding What To Donate?</h1>
+        <h1>
+          Having A Hard Time <br />
+          Deciding What To Donate?
+        </h1>
         <p>Here’s a list of highly demanded food items</p>
         <ul>
           <li>Rice</li>
@@ -184,6 +199,43 @@
       </article>
     </main>
 
-    <footer></footer>
+    <footer>
+      <form action="#">
+        <input type="text" class="input" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </form>
+
+      <div class="footer-links">
+        <ul>
+          <h3>INFORMATION</h3>
+          <a href="#"><li>Testmonial</li></a>
+          <a href="#"><li>Our Mission</li></a>
+          <a href="#"><li>Our Vision</li></a>
+        </ul>
+
+        <ul>
+          <h3>HELP</h3>
+          <a href="#"><li>Support</li></a>
+          <a href="#"><li>Contact</li></a>
+        </ul>
+
+        <ul>
+          <h3>LEGAL</h3>
+          <a href="#"><li>Terms & Conditions</li></a>
+          <a href="#"><li>Privacy Policy</li></a>
+          <a href="#"><li>License Agreement</li></a>
+          <a href="#"><li>Cookie Settings</li></a>
+        </ul>
+
+        <ul>
+          <h3>CONTACT US</h3>
+          <a href="#"><li>Terms & Conditions</li></a>
+          <a href="#"><li>Twitter</li></a>
+          <a href="#"><li>Facebook</li></a>
+          <a href="#"><li>LinkedIn</li></a>
+          <a href="#"><li>Gmail</li></a>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
