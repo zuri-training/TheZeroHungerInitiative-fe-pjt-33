@@ -1,68 +1,86 @@
-@media (min-width: 600px) {
-    .mobile-wrapper {
-      display: none;
-    }
-  }
-  
-@media (max-width: 600px) {
-    .wrapper-desktop {
-      display: none;
-    }
-  }
-
+@media (min-width: 765px) {
   .mobile-wrapper {
-      max-width: 375px;
-      margin: 40px auto;
-      height: auto;
+    display: none;
   }
 
-  .mobile-wrapper form {
-    background-color: white;
-    border-radius: 15px;
-    width: 100%;
+  .box-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+    margin-top: 0;
   }
+}
 
-  header {
-    background: #FE8E66;
-    width:100%;
-    height:70px;
-    border-radius: 15px 15px 0px 0px;
+@media (max-width: 765px) {
+  .wrapper-desktop {
+    display: none;
   }
+}
 
-  .donation-mobilehead h2{
-    width: 130px;
-    height: 30px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: capitalize;
-    color: white;
-    position: relative;
-    left:120px;
-    top: 15px;
-  }
+.mobile-wrapper {
+  max-width: 375px;
+  margin: 40px auto;
+  height: auto;
+}
 
-  .donation-mobilehead img {
-      height:12px;
-      width:8px;
-      color: white;
-      position: relative;
-      left: 20px;
-      top:20px;
-  }
+.mobile-wrapper form {
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+}
 
-  .form-mobile {
-    padding: 30px 30px;
-  }
+header {
+  background: #fe8e66;
+  width: 100%;
+  height: 70px;
+  border-radius: 15px 15px 0px 0px;
+}
 
-.payment-mobile,.cardName-mobile, .date-mobile, .cvv-mobile,.pin-mobile,.save-mobile {
+.donation-mobilehead h2 {
+  width: 130px;
+  height: 30px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: white;
+  position: relative;
+  left: 120px;
+  top: 15px;
+}
+
+.donation-mobilehead img {
+  height: 12px;
+  width: 8px;
+  color: white;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+.form-mobile {
+  padding: 30px 30px;
+}
+
+.payment-mobile,
+.cardName-mobile,
+.date-mobile,
+.cvv-mobile,
+.pin-mobile,
+.save-mobile {
   display: flex;
   flex-direction: column;
 }
 
-.payment-mobile label,.cardName-mobile label,.date-mobile label,.cvv-mobile label,.pin-mobile label,.save-mobile label {
+.payment-mobile label,
+.cardName-mobile label,
+.date-mobile label,
+.cvv-mobile label,
+.pin-mobile label,
+.save-mobile label {
   text-transform: capitalize;
   color: #353535;
   font-style: normal;
@@ -74,7 +92,12 @@
   margin-bottom: 5px;
 }
 
-.payment-mobile select,.cardName-mobile input,.date-mobile input,.cvv-mobile input,.pin-mobile input,.save-mobile select {
+.payment-mobile select,
+.cardName-mobile input,
+.date-mobile input,
+.cvv-mobile input,
+.pin-mobile input,
+.save-mobile select {
   height: 45px;
   width: 100%;
   padding-left: 30px;
@@ -83,7 +106,12 @@
   border-radius: 5px;
 }
 
-.payment-mobile img,.cardName-mobile img,.date-mobile img,.cvv-mobile img,.pin-mobile img,.save-mobile img {
+.payment-mobile img,
+.cardName-mobile img,
+.date-mobile img,
+.cvv-mobile img,
+.pin-mobile img,
+.save-mobile img {
   position: relative;
   left: 5px;
   bottom: 35px;
@@ -93,83 +121,76 @@
 }
 
 .cvv-mobile label {
-    text-transform: uppercase;
-  }
+  text-transform: uppercase;
+}
 
 .form-mobile button {
-    width:315px;
-    height: 56px;
-    border-radius:15px;
+  width: 315px;
+  height: 56px;
+  border-radius: 15px;
 }
 
 .donate {
-    width: 100px;
-    height: 50px;
-    border: 1px solid #fe8e66;
-    border-radius: 5px;
-    text-transform: uppercase;
-    background-color: #fe8e66;
-    color: white;
-    font-style: normal;
-    font-size: 15px;
-    font-family: "Lato", sans-serif;
-  }
-
-footer {
-    width:100%;
-    height:70px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #fafafa
+  width: 100px;
+  height: 50px;
+  border: 1px solid #fe8e66;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #fe8e66;
+  color: white;
+  font-style: normal;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
 }
 
+footer {
+  width: 100%;
+  height: 70px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #fafafa;
+}
 
 .footer-mobile {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer-mobile div {
-    width:50px;
-    height:50px;
-    background-color: #ffffff;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.04);
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    padding-top:10px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
 }
 
-.footer-mobile h4{
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 10px;
-    text-transform: capitalize;
-    padding-top: 5px;
+.footer-mobile h4 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 10px;
+  text-transform: capitalize;
+  padding-top: 5px;
 }
 
 .footer-mobile a {
-    text-decoration: none;
-    color: #353535;
+  text-decoration: none;
+  color: #353535;
 }
 
-
-.footer-mobile img:nth-of-type(1), .footer-mobile img:nth-of-type(2), .footer-mobile img:nth-of-type(3), .footer-mobile img:nth-of-type(4), .footer-mobile img:nth-of-type(5) {
-    width:20px;
-    height:20px;
-    background-color: #FE8E66;
-    border-radius: 3px;
+.footer-mobile img:nth-of-type(1),
+.footer-mobile img:nth-of-type(2),
+.footer-mobile img:nth-of-type(3),
+.footer-mobile img:nth-of-type(4),
+.footer-mobile img:nth-of-type(5) {
+  width: 20px;
+  height: 20px;
+  background-color: #fe8e66;
+  border-radius: 3px;
 }
-
-
-
-
-
-
-
-  
