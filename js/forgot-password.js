@@ -63,4 +63,5 @@ class ForgotPassword {
   
 }
 
-const signup = new ForgotPassword(prodUrl);
+//new ForgotPassword(prodUrl);
+new ForgotPassword(prodUrl);
