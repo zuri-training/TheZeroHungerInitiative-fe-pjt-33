@@ -20,18 +20,6 @@
         </header>
 
         <main class="form-mobile">
-          <div class="cardName-mobile">
-            <label for="cardName">Pickup Address</label>
-            <input
-              type="text"
-              name="cardName"
-              id="cardName"
-              placeholder="Enter Pickup Address"
-              required
-            />
-            <img src="./images/location.png" alt="" />
-          </div>
-
           <div class="payment-mobile">
             <label for="paymentMethod">Local Government Area</label>
             <select name="paymentMethod" id="paymentMethod" required>
@@ -46,6 +34,24 @@
               </option>
               <option value="paymentMethod">
                 <img src="./images/PM (dropdwon3).png" alt="" /> ONUIMO LGA
+              </option>
+            </select>
+            <img src="./images/location.png" alt="pay icon" />
+          </div>
+
+          <div class="payment-mobile">
+            <label for="paymentMethod">Donation Station</label>
+            <select name="paymentMethod" id="paymentMethod" required>
+              <option value="" selected disabled>Select Donation Branch</option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdown2).png" alt="" />Metropolis
+                Branch
+              </option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdown1).png" alt="" /> Downtown Branch
+              </option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdwon3).png" alt="" /> Village Branch
               </option>
             </select>
             <img src="./images/location.png" alt="pay icon" />
@@ -199,7 +205,7 @@
             </div>
 
             <form action="#" class="Nexthead-donation">
-              <h2>PickUp Delivery Information</h2>
+              <h2>DropOff Delivery Information</h2>
 
               <div class="formBody-desktop">
                 <div class="cardName">
