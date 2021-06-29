@@ -37,17 +37,6 @@
           close.style.display = "none";
         }
       };
-
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("head").style.position = "relative";
-        } else {
-          document.getElementById("head").style.position = "fixed";
-        }
-        prevScrollpos = currentScrollPos;
-      };
     </script>
 
     <header id="head">
