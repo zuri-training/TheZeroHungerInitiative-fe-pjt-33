@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard/Make Money Donation</title>
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/donation-details.css" />
     <link rel="stylesheet" href="./style/mediaquery.css" />
   </head>
 
@@ -13,126 +13,120 @@
     <!-- MOBILE VIEW -->
 
     <div class="mobile-wrapper">
+      <form action="#">
+        <header class="donation-mobilehead">
+          <img src="/images/Mask.png" alt="arrow icon" />
+          <h2>cash donation</h2>
+        </header>
 
-        <form action="#">
+        <main class="form-mobile">
+          <div class="payment-mobile">
+            <label for="paymentMethod">payment method</label>
+            <select name="paymentMethod" id="paymentMethod" required>
+              <option value="" selected disabled>Enter Payment Method</option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdown2).png" alt="" />Flutter
+              </option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdown1).png" alt="" /> Master Card
+              </option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdwon3).png" alt="" /> Visa
+              </option>
+            </select>
+            <img src="./images/PM (payment method).png" alt="pay icon" />
+          </div>
 
-            <header class="donation-mobilehead">
-                <img src="/images/Mask.png" alt="arrow icon" />
-                <h2>cash donation</h2>
-            </header>
+          <div class="cardName-mobile">
+            <label for="cardName">card holder name</label>
+            <input
+              type="text"
+              name="cardName"
+              id="cardName"
+              placeholder="Enter Card Holder Name"
+              required
+            />
+            <img src="./images/card name.png" alt="" />
+          </div>
 
-            <main class="form-mobile">
-                <div class="payment-mobile">
-                    <label for="paymentMethod">payment method</label>
-                    <select name="paymentMethod" id="paymentMethod" required>
-                    <option value="" selected disabled>Enter Payment Method</option>
-                    <option value="paymentMethod">
-                        <img src="./images/PM (dropdown2).png" alt="" />Flutter
-                    </option>
-                    <option value="paymentMethod">
-                        <img src="./images/PM (dropdown1).png" alt="" /> Master Card
-                    </option>
-                    <option value="paymentMethod">
-                        <img src="./images/PM (dropdwon3).png" alt="" /> Visa
-                    </option>
-                    </select>
-                    <img src="./images/PM (payment method).png" alt="pay icon" />
-                </div>
+          <div class="date-mobile">
+            <label for="expiryDate">expiry date</label>
+            <input
+              type="date"
+              name="expiryDate"
+              id="expiryDate"
+              placeholder="Enter Expiry Date"
+              required
+            />
+            <img src="./images/expiry date.png" alt="" />
+          </div>
 
-                <div class="cardName-mobile">
-                    <label for="cardName">card holder name</label>
-                    <input
-                    type="text"
-                    name="cardName"
-                    id="cardName"
-                    placeholder="Enter Card Holder Name"
-                    required
-                    />
-                    <img src="./images/card name.png" alt="" />
-                </div>
+          <div class="cvv-mobile">
+            <label for="cvv-mobile">cvv</label>
+            <input
+              type="number"
+              name="cvv"
+              id="cvv-mobile"
+              placeholder="One Time Donation"
+              required
+            />
+            <img src="./images/card name.png" alt="" />
+          </div>
 
-                <div class="date-mobile">
-                    <label for="expiryDate">expiry date</label>
-                    <input
-                    type="date"
-                    name="expiryDate"
-                    id="expiryDate"
-                    placeholder="Enter Expiry Date"
-                    required
-                    />
-                    <img src="./images/expiry date.png" alt="" />
-                </div>
+          <div class="pin-mobile">
+            <label for="pin-mobile">pin</label>
+            <input
+              type="number"
+              name="pin"
+              id="pin-mobile"
+              placeholder="One Time Donation"
+              required
+            />
+            <img src="./images/card name.png" alt="" />
+          </div>
 
-                <div class="cvv-mobile">
-                    <label for="cvv-mobile">cvv</label>
-                    <input
-                    type="number"
-                    name="cvv"
-                    id="cvv-mobile"
-                    placeholder="One Time Donation"
-                    required
-                    />
-                    <img src="./images/card name.png" alt="" />
-                </div>
+          <div class="save-mobile">
+            <label for="save-mobile"
+              >do you want to save your card details?</label
+            >
+            <select name="save-details" id="save-mobile" required>
+              <option value="" selected disabled>No</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+            <img src="./images/card name.png" alt="" />
+          </div>
 
-                <div class="pin-mobile">
-                    <label for="pin-mobile">pin</label>
-                    <input
-                    type="number"
-                    name="pin"
-                    id="pin-mobile"
-                    placeholder="One Time Donation"
-                    required
-                    />
-                    <img src="./images/card name.png" alt="" />
-                </div>
+          <button class="donate">donate</button>
+        </main>
 
-                <div class="save-mobile">
-                    <label for="save-mobile"
-                    >do you want to save your card details?</label
-                    >
-                    <select name="save-details" id="save-mobile" required>
-                    <option value="" selected disabled>No</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                    </select>
-                    <img src="./images/card name.png" alt="" />
-                </div>
+        <footer class="footer-mobile">
+          <div>
+            <img src="./images/house.png" alt="house icon" />
+            <a href="#"><h4>home</h4></a>
+          </div>
 
-                <button class="donate">donate</button>
-            </main>
+          <div>
+            <img src="./images/track.png" alt="track icon" />
+            <a href="#"><h4>track</h4></a>
+          </div>
 
-            <footer class="footer-mobile">
-                <div>
-                    <img src="./images/house.png" alt="house icon">
-                    <a href="#"><h4>home</h4></a>   
-                </div>
-        
-                <div>
-                    <img src="./images/track.png" alt="track icon">
-                    <a href="#"><h4>track</h4></a>
-                    
-                </div>
-        
-                <div>
-                    <img src="./images/donation.png" alt="donation icon">
-                    <a href="#"><h4>donation</h4></a>
-                </div>
-        
-                <div>
-                    <img src="./images/Chat.png" alt="chat icon">
-                    <a href="#"><h4>chat</h4></a>
-                </div>
-        
-                <div>
-                    <img src="./images/person1.png" alt="person1 icon">
-                    <a href="#"><h4>profile</h4></a>
-                </div>
-            </footer>
+          <div>
+            <img src="./images/donation.png" alt="donation icon" />
+            <a href="#"><h4>donation</h4></a>
+          </div>
+
+          <div>
+            <img src="./images/Chat.png" alt="chat icon" />
+            <a href="#"><h4>chat</h4></a>
+          </div>
+
+          <div>
+            <img src="./images/person1.png" alt="person1 icon" />
+            <a href="#"><h4>profile</h4></a>
+          </div>
+        </footer>
       </form>
-
-      
-
     </div>
 
     <!-- WEB VIEW -->
@@ -298,8 +292,8 @@
               </div>
 
               <div class="buttonForm-desktop">
-                    <button class="back">back</button>
-                    <button class="proceed">proceed</button>
+                <button class="back">back</button>
+                <button class="proceed">proceed</button>
               </div>
             </form>
           </div>
