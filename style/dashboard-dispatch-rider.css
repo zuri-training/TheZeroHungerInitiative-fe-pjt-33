@@ -14,6 +14,7 @@ body {
 .wrapper-desktop {
   background-color: #fafafa;
   margin: 40px auto;
+  height: 35em;
 }
 
 .dashboard-desktop {
@@ -22,7 +23,8 @@ body {
 
 .desktop-dashboard {
   min-width: 320px;
-  height: auto;
+  height: 35em;
+
   background-color: #ffffff;
   box-shadow: 6px 6px 24px rgba(174, 180, 202, 0.25);
 }
@@ -106,7 +108,7 @@ body {
   font-weight: 400;
 }
 
-.first {
+.second {
   background-color: #f0f0f0;
 }
 .first:hover,
@@ -118,7 +120,7 @@ body {
   background-color: #f0f0f0;
 }
 
-.first h2 a {
+.second h2 a {
   color: #fe8e66;
 }
 
@@ -413,7 +415,7 @@ body {
   align-items: center;
   flex-flow: column wrap;
   margin-top: 1em;
-  justify-content: space-between;
+  justify-content: flex-start;
   min-width: 10em;
 }
 .box {
@@ -443,13 +445,10 @@ body {
   border-radius: 50%;
 }
 .innerboxpic {
-  background-image: url(../images/donate.png);
+  background-image: url(../images/gift.png);
 }
 .innerboxpic2 {
-  background-image: url(../images/referals.png);
-}
-.innerboxpic3 {
-  background-image: url(../images/gift.png);
+  background-image: url(../images/checkmark.png);
 }
 .donation-side {
   position: relative;
