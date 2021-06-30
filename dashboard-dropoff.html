@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pickup - Welcome</title>
+    <link rel="stylesheet" href="./style/dashboard-pickup.css" />
+    <link rel="stylesheet" href="./style/mediaquery.css" />
+  </head>
+
+  <body>
+    <!-- MOBILE VIEW -->
+
+    <div class="mobile-wrapper">
+      <form action="#">
+        <header class="donation-mobilehead">
+          <img src="/images/Mask.png" alt="arrow icon" />
+          <h2>Pickup</h2>
+        </header>
+
+        <main class="form-mobile">
+          <div class="payment-mobile">
+            <label for="paymentMethod">Local Government Area</label>
+            <select name="paymentMethod" id="paymentMethod" required>
+              <option value="" selected disabled>
+                Select Local Government Area
+              </option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdown2).png" alt="" />ENUGU SOUTH LGA
+              </option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdown1).png" alt="" /> ENUGU WEST LGA
+              </option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdwon3).png" alt="" /> ONUIMO LGA
+              </option>
+            </select>
+            <img src="./images/location.png" alt="pay icon" />
+          </div>
+
+          <div class="payment-mobile">
+            <label for="paymentMethod">Donation Station</label>
+            <select name="paymentMethod" id="paymentMethod" required>
+              <option value="" selected disabled>Select Donation Branch</option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdown2).png" alt="" />Metropolis
+                Branch
+              </option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdown1).png" alt="" /> Downtown Branch
+              </option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdwon3).png" alt="" /> Village Branch
+              </option>
+            </select>
+            <img src="./images/location.png" alt="pay icon" />
+          </div>
+
+          <div class="cardName-mobile">
+            <label for="cardName">Contact Name</label>
+            <input
+              type="text"
+              name="cardName"
+              id="cardName"
+              placeholder="Enter Contact Name"
+              required
+            />
+            <img src="./images/PM (payment method).png" alt="" />
+          </div>
+
+          <div class="cardName-mobile">
+            <label for="cardName">Contact Phone Number</label>
+            <input
+              type="text"
+              name="cardName"
+              id="cardName"
+              placeholder="Enter Contact Phone Number"
+              required
+            />
+            <img src="./images/phone.png" alt="" />
+          </div>
+
+          <div class="date-mobile">
+            <label for="expiryDate">PickUp Date</label>
+            <input
+              type="date"
+              name="expiryDate"
+              id="expiryDate"
+              placeholder="Enter PickUp Date"
+              required
+            />
+            <img src="./images/expiry date.png" alt="" />
+          </div>
+
+          <button class="donate">SUBMIT</button>
+        </main>
+
+        <footer class="footer-mobile">
+          <div>
+            <img src="./images/house.png" alt="house icon" />
+            <a href="#"><h4>home</h4></a>
+          </div>
+
+          <div>
+            <img src="./images/track.png" alt="track icon" />
+            <a href="#"><h4>track</h4></a>
+          </div>
+
+          <div>
+            <img src="./images/donation.png" alt="donation icon" />
+            <a href="#"><h4>donation</h4></a>
+          </div>
+
+          <div>
+            <img src="./images/Chat.png" alt="chat icon" />
+            <a href="#"><h4>chat</h4></a>
+          </div>
+
+          <div>
+            <img src="./images/person1.png" alt="person1 icon" />
+            <a href="#"><h4>profile</h4></a>
+          </div>
+        </footer>
+      </form>
+    </div>
+
+    <!-- WEB VIEW -->
+
+    <div class="wrapper-desktop">
+      <section class="dashboard-desktop">
+        <aside class="desktop-dashboard">
+          <div class="topSection-aside">
+            <img src="./images/menu.png" alt="menu icon" />
+            <img src="./images/gift.png" alt="gift icon" />
+            <h4>zero hunger</h4>
+          </div>
+
+          <div class="midSection-aside">
+            <div class="first">
+              <img src="./images/dashboard.png" alt="dashboard icon" />
+              <h2><a href="#" target="_blank">dashboard</a></h2>
+            </div>
+
+            <div class="second">
+              <img src="./images/gift-icon.png" alt="donation icon" />
+              <h2>
+                <a href="./details-donation.html" target="_blank">donation</a>
+              </h2>
+            </div>
+
+            <div class="third">
+              <img src="./images/Vector.png" alt="live chat icon" />
+              <h2><a href="#" target="_blank">live chat</a></h2>
+              <img src="./images/Ellipse 15.png" alt="chat icon" />
+              <p>6</p>
+            </div>
+
+            <div class="fourth">
+              <img src="./images/referals.png" alt="referals icon" />
+              <h2><a href="#" target="_blank">referrals</a></h2>
+            </div>
+          </div>
+
+          <div class="bottomSection-aside">
+            <div class="fifth">
+              <img src="./images/settings.png" alt="settings icon" />
+              <h2><a href="#" target="_blank">settings</a></h2>
+            </div>
+
+            <div class="sixth">
+              <img src="./images/power.png" alt="power icon" />
+              <h2><a href="#" target="_blank">log out</a></h2>
+            </div>
+          </div>
+        </aside>
+
+        <div class="donation-side">
+          <nav class="header-desktop">
+            <div class="headSection-desktop">
+              <img src="./images/search button.png" alt="search icon" />
+              <input
+                type="Quick search"
+                placeholder="Quick search"
+                name="img"
+                id="img"
+              />
+            </div>
+
+            <div class="tailSection-desktop">
+              <img src="./images/bell.png" alt="bell icon" />
+              <div class="headTexts-desktop">
+                <h4>abiola vicky tolulope</h4>
+                <h4>donor</h4>
+              </div>
+              <img src="./images/Ellipse 19.png" alt="profile picture" />
+              <img src="./images/caret down.png" alt="dropdown icon" />
+            </div>
+          </nav>
+
+          <div class="mainSection-desktop">
+            <div class="head-donation">
+              <h2>Donation</h2>
+              <img src="./images/VectorDonation.png" alt="" />
+            </div>
+
+            <form action="#" class="Nexthead-donation">
+              <h2>DropOff Delivery Information</h2>
+
+              <div class="formBody-desktop">
+                <div class="cardName">
+                  <label for="cardName">PickUp Address</label>
+                  <input
+                    type="text"
+                    name="cardName"
+                    id="cardName"
+                    placeholder="Enter PickUp Address"
+                    required
+                  />
+                  <img src="./images/location.png" alt="" />
+                </div>
+
+                <div class="payment-desktop">
+                  <label for="paymentMethod">Local Government Area</label>
+                  <select name="paymentMethod" id="paymentMethod" required>
+                    <option value="" selected disabled>
+                      Select Local Government Area
+                    </option>
+                    <option value="paymentMethod">
+                      <img src="./images/PM (dropdown2).png" alt="" />ENUGU
+                      SOUTH LGA
+                    </option>
+                    <option value="paymentMethod">
+                      <img src="./images/PM (dropdown1).png" alt="" /> ENUGU
+                      WEST LGA Card
+                    </option>
+                    <option value="paymentMethod">
+                      <img src="./images/PM (dropdwon3).png" alt="" /> ONUIMO
+                      LGA
+                    </option>
+                  </select>
+                  <img src="./images/location.png" alt="pay icon" />
+                </div>
+
+                <div class="cardName">
+                  <label for="cardName">Enter Contact Name</label>
+                  <input
+                    type="text"
+                    name="cardName"
+                    id="cardName"
+                    placeholder="Enter Contact Name"
+                    required
+                  />
+                  <img src="./images/PM (payment method).png" alt="" />
+                </div>
+
+                <div class="cardName">
+                  <label for="cardName">Enter Contact Phone Number</label>
+                  <input
+                    type="text"
+                    name="cardName"
+                    id="cardName"
+                    placeholder="Enter Contact Phone Number"
+                    required
+                  />
+                  <img src="./images/phone.png" alt="" />
+                </div>
+
+                <div class="date-desktop">
+                  <label for="expiryDate">PickUp Date</label>
+                  <input
+                    type="date"
+                    name="expiryDate"
+                    id="expiryDate"
+                    placeholder="Enter PickUp Date"
+                    required
+                  />
+                  <img src="./images/expiry date.png" alt="" />
+                </div>
+              </div>
+
+              <div class="buttonForm-desktop">
+                <button class="back">PREVIOUS</button>
+                <button class="proceed">SUBMIT</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -37,25 +37,15 @@
           close.style.display = "none";
         }
       };
-
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("head").style.position = "relative";
-        } else {
-          document.getElementById("head").style.position = "fixed";
-        }
-        prevScrollpos = currentScrollPos;
-      };
     </script>
 
     <header id="head">
       <a href="#"> <div class="header-logo"></div></a>
       <div class="header-links">
-        <a href="#">HOME</a> <a href="#">ABOUT US</a>
+        <a href="/index.html">HOME</a> <a href="./about-us.html">ABOUT US</a>
         <a href="#">DONATE</a>
         <a href="#">VOLUNTEER</a>
+        <a href="./team.html"> OUR TEAM</a>
         <a href="./login.html"><button class="login-button">Login</button></a>
       </div>
       <span
@@ -76,12 +66,14 @@
       ></span>
 
       <section class="sideNavHidden">
-        <a href="#">
+        <a href="./index.html">
           <span class="resetColor"> <i class="fas fa-home"></i>BACK HOME </span>
         </a>
 
-        <a href="#">
-          <span class="resetColor"> <i class="fas fa-users"></i>ABOUT US </span>
+        <a href="./about-us.html">
+          <span class="resetColor">
+            <i class="fas fa-info-circle"></i>ABOUT US
+          </span>
         </a>
 
         <a href="#">
@@ -89,7 +81,9 @@
             <i class="fas fa-hand-holding-heart"></i>DONATE
           </span>
         </a>
-
+        <a href="./team.html">
+          <span class="resetColor"> <i class="fas fa-users"></i>OUR TEAM </span>
+        </a>
         <a href="#">
           <span class="resetColor">
             <i class="fas fa-people-carry"></i>VOLUNTEER
@@ -209,8 +203,8 @@
         <ul>
           <h3>INFORMATION</h3>
           <a href="#"><li>Testmonial</li></a>
-          <a href="#"><li>Our Mission</li></a>
-          <a href="#"><li>Our Vision</li></a>
+          <a href="./about-us.html"><li>Our Mission</li></a>
+          <a href="./about-us.html"><li>Our Vision</li></a>
         </ul>
 
         <ul>
@@ -238,9 +232,4 @@
       </div>
     </footer>
   </body>
-  
-  <!--main-->
 </html>
-=======
-</html>
-<!--main-->

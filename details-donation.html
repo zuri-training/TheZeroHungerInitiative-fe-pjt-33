@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard/Make Money Donation</title>
+    <link rel="stylesheet" href="./style/donation-details.css" />
+    <link rel="stylesheet" href="./style/mediaquery.css" />
+  </head>
+
+  <body>
+    <!-- MOBILE VIEW -->
+
+    <div class="mobile-wrapper">
+      <form action="#">
+        <header class="donation-mobilehead">
+          <img src="/images/Mask.png" alt="arrow icon" />
+          <h2>cash donation</h2>
+        </header>
+
+        <main class="form-mobile">
+          <div class="payment-mobile">
+            <label for="paymentMethod">payment method</label>
+            <select name="paymentMethod" id="paymentMethod" required>
+              <option value="" selected disabled>Enter Payment Method</option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdown2).png" alt="" />Flutter
+              </option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdown1).png" alt="" /> Master Card
+              </option>
+              <option value="paymentMethod">
+                <img src="./images/PM (dropdwon3).png" alt="" /> Visa
+              </option>
+            </select>
+            <img src="./images/PM (payment method).png" alt="pay icon" />
+          </div>
+
+          <div class="cardName-mobile">
+            <label for="cardName">card holder name</label>
+            <input
+              type="text"
+              name="cardName"
+              id="cardName"
+              placeholder="Enter Card Holder Name"
+              required
+            />
+            <img src="./images/card name.png" alt="" />
+          </div>
+
+          <div class="date-mobile">
+            <label for="expiryDate">expiry date</label>
+            <input
+              type="date"
+              name="expiryDate"
+              id="expiryDate"
+              placeholder="Enter Expiry Date"
+              required
+            />
+            <img src="./images/expiry date.png" alt="" />
+          </div>
+
+          <div class="cvv-mobile">
+            <label for="cvv-mobile">cvv</label>
+            <input
+              type="number"
+              name="cvv"
+              id="cvv-mobile"
+              placeholder="One Time Donation"
+              required
+            />
+            <img src="./images/card name.png" alt="" />
+          </div>
+
+          <div class="pin-mobile">
+            <label for="pin-mobile">pin</label>
+            <input
+              type="number"
+              name="pin"
+              id="pin-mobile"
+              placeholder="One Time Donation"
+              required
+            />
+            <img src="./images/card name.png" alt="" />
+          </div>
+
+          <div class="save-mobile">
+            <label for="save-mobile"
+              >do you want to save your card details?</label
+            >
+            <select name="save-details" id="save-mobile" required>
+              <option value="" selected disabled>No</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+            <img src="./images/card name.png" alt="" />
+          </div>
+
+          <button class="donate">donate</button>
+        </main>
+
+        <footer class="footer-mobile">
+          <div>
+            <img src="./images/house.png" alt="house icon" />
+            <a href="#"><h4>home</h4></a>
+          </div>
+
+          <div>
+            <img src="./images/track.png" alt="track icon" />
+            <a href="#"><h4>track</h4></a>
+          </div>
+
+          <div>
+            <img src="./images/donation.png" alt="donation icon" />
+            <a href="#"><h4>donation</h4></a>
+          </div>
+
+          <div>
+            <img src="./images/Chat.png" alt="chat icon" />
+            <a href="#"><h4>chat</h4></a>
+          </div>
+
+          <div>
+            <img src="./images/person1.png" alt="person1 icon" />
+            <a href="#"><h4>profile</h4></a>
+          </div>
+        </footer>
+      </form>
+    </div>
+
+    <!-- WEB VIEW -->
+
+    <div class="wrapper-desktop">
+      <section class="dashboard-desktop">
+        <aside class="desktop-dashboard">
+          <div class="topSection-aside">
+            <img src="./images/menu.png" alt="menu icon" />
+            <img src="./images/gift.png" alt="gift icon" />
+            <h4>zero hunger</h4>
+          </div>
+
+          <div class="midSection-aside">
+            <div class="first">
+              <img src="./images/dashboard.png" alt="dashboard icon" />
+              <h2><a href="#" target="_blank">dashboard</a></h2>
+            </div>
+
+            <div class="second">
+              <img src="./images/donation.png" alt="donation icon" />
+              <h2><a href="#" target="_blank">donation</a></h2>
+            </div>
+
+            <div class="third">
+              <img src="./images/Vector.png" alt="live chat icon" />
+              <h2><a href="#" target="_blank">live chat</a></h2>
+              <img src="./images/Ellipse 15.png" alt="chat icon" />
+              <p>6</p>
+            </div>
+
+            <div class="fourth">
+              <img src="./images/referals.png" alt="referals icon" />
+              <h2><a href="#" target="_blank">referrals</a></h2>
+            </div>
+          </div>
+
+          <div class="bottomSection-aside">
+            <div class="fifth">
+              <img src="./images/settings.png" alt="settings icon" />
+              <h2><a href="#" target="_blank">settings</a></h2>
+            </div>
+
+            <div class="sixth">
+              <img src="./images/power.png" alt="power icon" />
+              <h2><a href="#" target="_blank">log out</a></h2>
+            </div>
+          </div>
+        </aside>
+
+        <div class="donation-side">
+          <nav class="header-desktop">
+            <div class="headSection-desktop">
+              <img src="./images/search button.png" alt="search icon" />
+              <input
+                type="Quick search"
+                placeholder="Quick search"
+                name="img"
+                id="img"
+              />
+            </div>
+
+            <div class="tailSection-desktop">
+              <img src="./images/bell.png" alt="bell icon" />
+              <div class="headTexts-desktop">
+                <h4>abiola vicky tolulope</h4>
+                <h4>donor</h4>
+              </div>
+              <img src="./images/Ellipse 19.png" alt="profile picture" />
+              <img src="./images/caret down.png" alt="dropdown icon" />
+            </div>
+          </nav>
+
+          <div class="mainSection-desktop">
+            <div class="head-donation">
+              <h2>donation</h2>
+              <img src="./images/VectorDonation.png" alt="" />
+            </div>
+
+            <form action="#" class="Nexthead-donation">
+              <h2>cash donation/payment information</h2>
+
+              <div class="formBody-desktop">
+                <div class="payment-desktop">
+                  <label for="paymentMethod">payment method</label>
+                  <select name="paymentMethod" id="paymentMethod" required>
+                    <option value="" selected disabled>
+                      Enter Payment Method
+                    </option>
+                    <option value="paymentMethod">
+                      <img src="./images/PM (dropdown2).png" alt="" />Flutter
+                    </option>
+                    <option value="paymentMethod">
+                      <img src="./images/PM (dropdown1).png" alt="" /> Master
+                      Card
+                    </option>
+                    <option value="paymentMethod">
+                      <img src="./images/PM (dropdwon3).png" alt="" /> Visa
+                    </option>
+                  </select>
+                  <img src="./images/PM (payment method).png" alt="pay icon" />
+                </div>
+
+                <div class="cardName">
+                  <label for="cardName">card holder name</label>
+                  <input
+                    type="text"
+                    name="cardName"
+                    id="cardName"
+                    placeholder="Enter Card Holder Name"
+                    required
+                  />
+                  <img src="./images/card name.png" alt="" />
+                </div>
+
+                <div class="date-desktop">
+                  <label for="expiryDate">expiry date</label>
+                  <input
+                    type="date"
+                    name="expiryDate"
+                    id="expiryDate"
+                    placeholder="Enter Expiry Date"
+                    required
+                  />
+                  <img src="./images/expiry date.png" alt="" />
+                </div>
+
+                <div class="cvv-desktop">
+                  <label for="cvv-desktop">cvv</label>
+                  <input
+                    type="number"
+                    name="cvv"
+                    id="cvv-desktop"
+                    placeholder="One Time Donation"
+                    required
+                  />
+                  <img src="./images/card name.png" alt="" />
+                </div>
+
+                <div class="pin-desktop">
+                  <label for="pin-desktop">pin</label>
+                  <input
+                    type="number"
+                    name="pin"
+                    id="pin-desktop"
+                    placeholder="One Time Donation"
+                    required
+                  />
+                  <img src="./images/card name.png" alt="" />
+                </div>
+
+                <div class="save-desktop">
+                  <label for="save-desktop"
+                    >do you want to save your card details?</label
+                  >
+                  <select name="save-details" id="save-desktop" required>
+                    <option value="" selected disabled>No</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                  <img src="./images/card name.png" alt="" />
+                </div>
+              </div>
+
+              <div class="buttonForm-desktop">
+                <button class="back">back</button>
+                <button class="proceed">proceed</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

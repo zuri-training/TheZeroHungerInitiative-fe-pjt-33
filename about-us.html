@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="./style/about-us.css" />
+ <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/bb11d8c58c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    
+    <script>
+      const handleToggle = () => {
+        let sideNav = document.querySelector(".sideNavHidden");
+        let close = document.querySelector("#close");
+        let open = document.querySelector("#open");
+        sideNav.classList.toggle("sideNav");
+        let openStyle = getComputedStyle(open);
+        let openDisplay = openStyle.display;
+        if (openDisplay === "block") {
+          open.style.display = "none";
+          close.style.display = "block";
+        } else {
+          open.style.display = "block";
+          close.style.display = "none";
+        }
+      };
+    </script>
+  </head>
+  <body>
+   <!--  <div class="container">
+      <nav class="header-desktop">
+        <div class="logo-desktop">
+          <img src="./images/icons8-open-parcel-50.png" alt="open box icon" />
+          <img src="./images/icons8-apple-64.png" alt="apple icon" />
+          <h2>zero hunger</h2>
+        </div>
+
+        <ul>
+          <li><a href="#">home</a></li>
+          <li>
+            <a href="#"
+              >about us
+              <img
+                src="./images/outline_keyboard_arrow_down_black_24dp.png"
+                alt="arrow-down icon"
+              />
+            </a>
+          </li>
+          <li><a href="#">donate</a></li>
+          <li>
+            <a href="#"
+              >volunteer
+              <img
+                src="./images/outline_keyboard_arrow_down_black_24dp.png"
+                alt="arown-down icon"
+              />
+            </a>
+          </li>
+          <button>login</button>
+        </ul>
+      </nav>
+ -->
+
+   <header id="head">
+      <a href="#"> <div class="header-logo"></div></a>
+      <div class="header-links">
+        <a href="/index.html">HOME</a> <a href="./about-us.html">ABOUT US</a>
+        <a href="#">DONATE</a>
+        <a href="#">VOLUNTEER</a>
+        <a href="./team.html"> OUR TEAM</a>
+        <a href="./login.html"><button class="login-button">Login</button></a>
+      </div>
+      <span
+        class="iconify"
+        data-icon="heroicons-outline:menu-alt-3"
+        data-inline="false"
+        style="color: #fe8e66"
+        id="open"
+        onclick="handleToggle()"
+      ></span>
+      <span
+        class="iconify"
+        data-icon="akar-icons:cross"
+        data-inline="false"
+        style="color: #fe8e66"
+        id="close"
+        onclick="handleToggle()"
+      ></span>
+
+      <section class="sideNavHidden">
+        <a href="./index.html">
+          <span class="resetColor"> <i class="fas fa-home"></i>BACK HOME </span>
+        </a>
+
+        <a href="./about-us.html">
+          <span class="resetColor">
+            <i class="fas fa-info-circle"></i>ABOUT US
+          </span>
+        </a>
+
+        <a href="#">
+          <span class="resetColor">
+            <i class="fas fa-hand-holding-heart"></i>DONATE
+          </span>
+        </a>
+        <a href="./team.html">
+          <span class="resetColor"> <i class="fas fa-users"></i>OUR TEAM </span>
+        </a>
+        <a href="#">
+          <span class="resetColor">
+            <i class="fas fa-people-carry"></i>VOLUNTEER
+          </span>
+        </a>
+
+        <a href="./login.html"><button class="login-button">LOGIN</button></a>
+      </section>
+    </header>
+
+      <main>
+        <section class="texts">
+          <h1>zero hunger initiative</h1>
+
+          <p>
+            We at Zero Hunger Initiative aim at reducing hunger in
+            ourcommunities a day at a time.
+          </p>
+
+          <p>
+            We do this with the aim of reducing hunger induced crimes and
+            killings as well as prevent malnourishment of indigent kids in the
+            society due to lack of food and proper nutrition.
+          </p>
+
+          <p>
+            Zero Hunger hpes that in 10 years, with the help of you, our
+            wonderful donor, we will be able to completely eradicate hunger in
+            our communities.
+          </p>
+        </section>
+
+  <section class="first-image">
+          <img src="./images/about-us1.png" alt="a woman and child cooking" /> 
+        </section>
+
+
+        <section class="first-image-m">
+         
+        </section>
+
+        <section class="grid1">
+          <div class="text1">
+            <h3 id="mission">our mission</h3>
+            <p>Our aim is to reduce hunger and death in Africa.</p>
+            <p>Our mission can also be sub divided into two:</p>
+            <ul>
+              <li>
+                To do our bit in the sustainment development goals of our
+                nation, Nigeria.
+              </li>
+              <li>
+                Have drop off points in all local government closer to the
+                people who are in dire need of food.
+              </li>
+            </ul>
+          </div>
+
+
+           <div class="typefood">
+         <img
+              src="./images/about-us2.png"
+              alt="a picture of different types of food."
+            /> 
+          </div>
+          <div class="typefood-m">
+          
+          </div>
+        </section>
+
+        <section class="grid2">
+          <section class="grid2">
+              <div class="familypic">
+          <img src="./images/about-us3.png" alt="a family baking" /> 
+          </div>
+
+          <div class="text2">
+            <h3 id="vision">Our vision</h3>
+            <p>
+              We strive to eliminate hunger all over africa and ensure that no
+              one goes to bed hungry.
+            </p>
+          </div>
+
+          
+       
+          <div class="familypic-m">
+            
+          </div>
+        </section>
+      </main>
+<!-- 
+      <footer>
+        <form action="#">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email address"
+          />
+          <button>subscribe</button>
+        </form>
+
+        <section class="grid3">
+          <div class="one">
+            <h5>information</h5>
+            <ul>
+              <li><a href="#">testimonials</a></li>
+              <li><a href="#mission">our mission</a></li>
+              <li><a href="#vision">our vision</a></li>
+            </ul>
+          </div>
+
+          <div class="two">
+            <h5>help</h5>
+            <ul>
+              <li><a href="#">support</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </div>
+
+          <div class="three">
+            <h5>legal</h5>
+            <ul>
+              <li><a href="#">terms and conditions</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">license agreement</a></li>
+              <li><a href="#">cookies settings</a></li>
+            </ul>
+          </div>
+
+          <div class="four">
+            <h5>contact us</h5>
+            <ul>
+              <li><a href="#">twitter</a></li>
+              <li><a href="#">facebook</a></li>
+              <li><a href="#">linkedIn</a></li>
+              <li><a href="#">gmail</a></li>
+            </ul>
+          </div>
+        </section>
+      </footer> -->
+
+
+       <footer>
+      <form action="#">
+        <input type="text" class="input" placeholder="Email Address" />
+        <button>Subscribe</button>
+      </form>
+
+      <div class="footer-links">
+        <ul>
+          <h3>INFORMATION</h3>
+          <a href="#"><li>Testmonial</li></a>
+          <a href="./about-us.html"><li>Our Mission</li></a>
+          <a href="./about-us.html"><li>Our Vision</li></a>
+        </ul>
+
+        <ul>
+          <h3>HELP</h3>
+          <a href="#"><li>Support</li></a>
+          <a href="#"><li>Contact</li></a>
+        </ul>
+
+        <ul>
+          <h3>LEGAL</h3>
+          <a href="#"><li>Terms & Conditions</li></a>
+          <a href="#"><li>Privacy Policy</li></a>
+          <a href="#"><li>License Agreement</li></a>
+          <a href="#"><li>Cookie Settings</li></a>
+        </ul>
+
+        <ul>
+          <h3>CONTACT US</h3>
+          <a href="#"><li>Terms & Conditions</li></a>
+          <a href="#"><li>Twitter</li></a>
+          <a href="#"><li>Facebook</li></a>
+          <a href="#"><li>LinkedIn</li></a>
+          <a href="#"><li>Gmail</li></a>
+        </ul>
+      </div>
+    </footer>
+    </div>
+  </body>
+</html>
