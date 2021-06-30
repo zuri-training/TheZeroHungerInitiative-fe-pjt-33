@@ -1,7 +1,7 @@
 const devUrl = "http://localhost:5000/api/v1";
 const prodUrl = "https://zero-hunger-initiative.herokuapp.com/api/v1";
 
-console.log(window.location);
+//console.log(window.location);
 
 class ResetPassword {
   constructor(url) {
@@ -21,18 +21,17 @@ class ResetPassword {
   }
   
   resetPassDetails() {
-    const token = document.querySelector("#token").value;
     const password = document.querySelector("#newPassword").value;
     const passwordConfirm = document.querySelector("#re-enterPassword").value;
   
-    return {password, token, passwordConfirm};
+    return {password, passwordConfirm};
   }
   
   
   async resetPassHandler(e) {
     e.preventDefault();
     // Get username and password
-    const {password, token, passwordConfirm} = this.resetPassDetails();
+    const {password, passwordConfirm} = this.resetPassDetails();
     
     // Loading state
     this.resetPassButton.innerHTML = `<div class="lds-hourglass"></div>`;
@@ -41,7 +40,7 @@ class ResetPassword {
       // Make an http request to the api
       const res = await axios({
         method: 'POST',
-        url: `${this.url}/users/reset-password/${token}`,
+        url: `${this.url}/users/reset-password/${window.location.search.split("=")[1]}`,
         data: {
           password,
           passwordConfirm
