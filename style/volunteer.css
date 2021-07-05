@@ -8,23 +8,42 @@
 }
 
 /* MOBILE SCREEN */
-div.wrap {
+ div.wrap {
   display: block;
 }
-form {
+.top{
   display: flex;
-  justify-content: center;
-}
-div.exit i {
-  font-size: 20px;
-  margin: 15px;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 0 10px;
   color: #fe8e66;
 }
 
-.mobile-form {
-  width: 320px;
+form {
+  display: flex;
+  justify-content: center;
+background: #E5E5E5;;
+}
+
+.form {
+  width: 340px;
   margin: 10px 0;
+  padding: 20px;
   background: #fff;
+}
+#mobile-head{
+height: 32px;
+width: 284px;
+font-size: 20px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0.01em;
+text-align: left;
+color: rgba(67, 76, 91, 1);
+margin-bottom: 36px;
+
 }
 div.details {
   position: relative;
@@ -43,7 +62,23 @@ select {
   font-style: italic;
   color: #aeb4ca;
 }
-
+.details input,
+  select {
+    padding-left: 45px;
+  }
+.details i {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+}
+.details i.fa-eye-slash,
+  .details i.fa-eye {
+    left: 250px;
+  }
+  /* THE DISPLAY PROPERTY WILL BE CONTROLLED WITH THE JS DOCUMENT */
+  .details i.fa-eye-slash {
+    display: none;
+  }
 button {
   width: 100%;
   height: 56px;
@@ -54,64 +89,28 @@ button {
   text-align: center;
   font-weight: 500;
   color: #fff;
-  margin-top: 20px;
+  margin: 30px 0;
 }
-footer {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 64px;
-  background: #fafafa;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.nav {
-  width: 48px;
-  height: 48px;
-  background: #fff;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.nav-text {
-  font-size: 8px;
-  font-weight: 500;
-  height: 10px;
-  color: #353535;
-  padding: 7px 0 5px 0;
-}
-.nav i {
-  color: #fe8e66;
-  width: 20;
-  height: 20px;
-  padding-top: 7px;
-}
-div.logo,
-div.exit span,
-.web-form {
+#web-head, .exit {
   display: none;
 }
-@media (max-width: 375px) {
-  form {
-    height: 100vh;
-  }
-}
+
+
+
 /*------------------- WEB SCREEN ----------------*/
 
 @media (min-width: 600px) {
-  .mobile-form,
-  footer {
-    display: none;
-  }
-  form {
+    form {
     height: 100%;
   }
-  .web-form {
+
+  .form {
     display: block;
     width: 600px;
     margin: 10px 0;
+  }
+  i.fa-bars, #mobile-head{
+    display: none;
   }
 
   div.logo {
@@ -130,7 +129,9 @@ div.exit span,
   div.logo i {
     margin-right: 10px;
   }
-
+  #web-head, .exit {
+    display: block;
+  }
   div.exit {
     width: 100px;
     height: 40px;
@@ -146,7 +147,7 @@ div.exit span,
     margin-right: 5px;
   }
 
-  .web-form p {
+  .form #web-head {
     margin: 10px 0;
   }
   .details input,
@@ -163,13 +164,10 @@ div.exit span,
   .details i.fa-eye {
     left: 520px;
   }
-  /* THE DISPLAY PROPERTY WILL BE CONTROLLED WITH THE JS DOCUMENT */
-  .details i.fa-eye-slash {
-    display: none;
-  }
+  
   button {
-    text-transform: uppercase;
     font-size: 1.13rem;
     font-weight: 600;
   }
+
 }
