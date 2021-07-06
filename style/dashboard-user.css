@@ -18,6 +18,8 @@ body {
 
 .dashboard-desktop {
   display: flex;
+  min-width: max-content;
+  background-color: #fafafa;
 }
 
 .desktop-dashboard {

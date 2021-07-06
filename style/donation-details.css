@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 
-
 * {
   padding: 0;
   margin: 0;
@@ -12,18 +11,18 @@ body {
 }
 
 .wrapper-desktop {
-  max-width: 1440px;
-  height: auto;
   background-color: #fafafa;
   margin: 40px auto;
 }
 
 .dashboard-desktop {
   display: flex;
+  min-width: max-content;
+  background-color: #fafafa;
 }
 
 .desktop-dashboard {
-  width: 320px;
+  min-width: 320px;
   height: auto;
   background-color: #ffffff;
   box-shadow: 6px 6px 24px rgba(174, 180, 202, 0.25);
@@ -405,4 +404,9 @@ body {
   width: 25px;
   height: 25px;
   opacity: 0.5;
+}
+
+.donation-side {
+  position: relative;
+  width: 100%;
 }
