@@ -35,22 +35,22 @@
   
 ## AUTHOR 
 
-  - ZURI TEAM
+  - [@zuri-training](https://github.com/zuri-training)
   
 ---
   
 ## CONTRIBUTORS 
   
-  - @AugustusEbuka
-  - @okerekechinweotito
-  - @didhee
-  - @culoves
+  - [@AugustusEbuka](https://github.com/AugustusEbuka)
+  - [@okerekechinweotito](https://github.com/okerekechinweotito)
+  - [@didhee](https://github.com/didhee)
+  - [@culoves](https://github.com/culoves)
   
  ---
   
 ## ACKNOWLEDGEMENT 
   
-  - A big shout out to @zuritraining for giving us the opportunity to test our skills after months of pure learning. It has been an awesome experience so far, a brainstorming one too...Kudos to everyone on PJT-33, MENTORS, PM @lami and team members.
+  - A big shout out to @zuritraining for giving us the opportunity to test our skills after months of pure learning. It has been an awesome experience so far, a brainstorming one too...Kudos to everyone on PJT-33, MENTORS, PM [@lami](https://github.com/lami) and team members.
   
  ---
   
@@ -62,4 +62,4 @@
 
 ## LICENSE 
   
-  - This project is ZURI TRAINING licensed!
+  - This project is [@zuri-training](https://github.com/zuri-training) licensed!
