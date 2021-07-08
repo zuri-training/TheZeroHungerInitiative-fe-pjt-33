@@ -39,7 +39,7 @@
   
 ---
   
-## CONTRIBUTORS 
+## 🤝 CONTRIBUTORS 
   
   - [@AugustusEbuka](https://github.com/AugustusEbuka)
   - [@okerekechinweotito](https://github.com/okerekechinweotito)
@@ -56,7 +56,7 @@
   
 ## SUPPORT 
 
-  - Please show your support by giving this project a star rating, to help boost and encourage this small team of beginners.
+  - Please show your support by giving this project a star 🌟 rating, to help boost and encourage this small team of beginners. 😉🤟
   
 ---  
 
