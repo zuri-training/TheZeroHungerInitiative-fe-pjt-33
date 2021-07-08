@@ -33,6 +33,12 @@
   
  ---
   
+## AUTHOR 
+
+  - ZURI TEAM
+  
+---
+  
 ## CONTRIBUTORS 
   
   - @AugustusEbuka
@@ -47,7 +53,13 @@
   - A big shout out to @zuritraining for giving us the opportunity to test our skills after months of pure learning. It has been an awesome experience so far, a brainstorming one too...Kudos to everyone on PJT-33, MENTORS, PM @lami and team members.
   
  ---
+  
+## SUPPORT 
 
- ## LICENSE 
+  - Please show your support by giving this project a star rating, to help boost and encourage this small team of beginners.
+  
+---  
+
+## LICENSE 
   
   - This project is ZURI TRAINING licensed!
