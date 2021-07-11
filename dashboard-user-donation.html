@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style/dashboard-user-donation.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="web-view">
+    <div class="header">
+      <div class="nav">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Quick search" />
+        </div>
+        <div class="profile-details">
+          <i class="far fa-bell"></i>
+          <span>3</span>
+          <div class="donor">
+            <h4 class="donor-name">Abiola Vicky Tolulope</h4>
+            <small>Donor</small>
+          </div>
+          <div class="img"></div>
+          <i class="fas fa-caret-down"></i>
+        </div>
+      </div>
+    </div>
+    <!-- END OF HEADER -->
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="fas fa-bars" id="toggle"></i>
+        <i class="fal fa-box-open"></i>
+        <span class="logo-name">ZERO HUNGER</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+            <a href="#">
+              <i class="fas fa-th side-bar-icon"></i>
+              <span class="link-name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="las la-gift"></i>
+              <span class="link-name">Donations</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="lar la-comment-alt"></i>
+              <span class="link-name">Live Chat</span>
+            </a>
+            <div><span class="notify">6</span></div>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="las la-clone"></i>
+              <span class="link-name">Referral</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="las la-cog"></i>
+              <span class="link-name">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="las la-power-off"></i>
+              <span class="link-name">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    <!-- END OF WEB SCREEN SIDEBAR -->
+    <div class="main">
+      <div class="main-container">
+        <div class="container-one">
+          <div class="container-one-heading">My Referrals</div>
+          <div class="container-one-icon">
+            <div><i class="far fa-file-alt"></i>
+            <span>Report</span></div>
+            <div><i class="far fa-sort-amount-up"></i>
+              <span>Sort</span></div>
+              <div><i class="far fa-filter"></i>
+                <span>Filter</span></div>
+            <div class="button">
+                <i class="far fa-share-alt"></i>
+                <span>Invite new</span>
+            </div>
+          </div>
+        </div>
+        <div class="container-two">
+          <table>
+            <tr>
+              <th>S/N</th>
+              <th>Name</th>
+              <th>Referral Status</th>
+              <th>Date joined</th>
+            </tr>
+            <tr>
+              <td class="number">1.</td>
+              <td>Kinky Folami</td>
+              <td>
+                <div class="status-alert-2">Joined</div></td>
+              <td>Dec 05, 2020</td>
+              
+            </tr>
+            <tr>
+              <td class="number">2.</td>
+              <td>Abolaji folly</td>
+              <td>
+                <div class="status-alert-2">joined</div></td>
+              <td>Dec 05, 2020</td>
+            </tr>
+            <tr>
+              <td class="number">3.</td>
+              <td>Lady J</td>
+              <td>
+                <div class="status-alert-2">Joined</div></td>
+              <td>Dec 05, 2020</td>
+            </tr>
+            <tr>
+              <td class="number">4.</td>
+              <td>Augustus Ekpo</td>
+              <td>
+                <div class="status-alert">Pending</div></td>
+              <td>Dec 05, 2020</td>
+            </tr>
+            
+          </table>
+          <div class="pages">
+            <div>Rows per page:</div>
+            <div>
+              <span>4</span>
+              <i class="fas fa-caret-down"></i>
+            </div>
+            <div>
+              <span>1-4 of 4</span>
+            </div>
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
