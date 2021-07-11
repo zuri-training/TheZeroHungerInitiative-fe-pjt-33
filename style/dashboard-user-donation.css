@@ -266,14 +266,6 @@ td > div.status-alert {
   width: 100px;
 }
 
-td > div.status-alert-1 {
-  border-radius: 100px;
-  color: #fe8e66;
-  height: 24px;
-  background: #fe8e661f;
-  margin-right: 20px;
-  width: 100px;
-}
 td > div.status-alert-2 {
   border-radius: 100px;
   color: #29cc97;
