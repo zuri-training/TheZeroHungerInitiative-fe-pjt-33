@@ -212,7 +212,7 @@ div.nav {
 .container-one-icon > span {
   margin-left: 11px;
 }
-.container-one-icon > .button {
+.container-one-icon > button {
   width: 150px;
   height: 48px;
   background: #fe8e66;
@@ -224,6 +224,7 @@ div.nav {
   color: #fff;
   font-weight: 400;
   line-height: 48px;
+  cursor: pointer;
 }
 table {
   width: 100%;
@@ -283,7 +284,7 @@ td > div.status-alert-2 {
 }
 .pages {
   color: #a4a6b3;
-  float: right;
+  justify-content: flex-end;
   display: flex;
   padding: 27px 0;
   margin-top: 200px;
