@@ -208,6 +208,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: auto;
+  margin-right: 12px;
 }
 
 .tailSection-desktop img:nth-of-type(1) {
@@ -228,30 +229,27 @@ body {
   width: 10px;
   margin-left: 35px;
 }
-
-.headTexts-desktop h4:nth-of-type(1) {
-  text-transform: capitalize;
+.headTexts-desktop {
+  text-align: right;
+}
+.headTexts-desktop h4 {
   color: #353535;
   font-style: normal;
   font-size: 16px;
   font-family: "Lato", sans-serif;
   line-height: 29px;
   font-weight: 400;
-  letter-spacing: 1px;
   position: relative;
   bottom: 5px;
 }
 
-.headTexts-desktop h4:nth-of-type(2) {
-  text-transform: capitalize;
-  text-align: right;
+.headTexts-desktop small {
   color: #353535;
   font-style: normal;
-  font-size: 16px;
+  font-size: 12px;
   font-family: "Lato", sans-serif;
   line-height: 29px;
   font-weight: 400;
-  letter-spacing: 1px;
 }
 
 .headTexts-desktop h4 {
