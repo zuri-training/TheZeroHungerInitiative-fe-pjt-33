@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+.wrapper {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* styling the nav-bar */
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 60px rgba(53, 53, 53, 0.08);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* styling the logo */
+
+.header-logo {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  left: 20px;
+  top: 0;
+}
+
+.header-logo img:nth-of-type(1),
+footer .first .logo img:nth-of-type(1) {
+  width: 23px;
+  height: 23px;
+}
+
+.header-logo img:nth-of-type(2) {
+  position: relative;
+  bottom: 9px;
+  right: 15px;
+}
+
+.header-logo h3 {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: #fe8e66;
+  line-height: 34px;
+  letter-spacing: 1px;
+}
+
+/* styling the links */
+
+.links ul {
+  display: flex;
+  align-items: center;
+}
+
+.links ul li {
+  list-style: none;
+}
+
+.links ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #353535;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0 30px;
+  line-height: 22px;
+}
+
+.links ul li a img {
+  vertical-align: text-bottom;
+}
+
+.links ul li a:hover,
+.links ul li a:active {
+  text-transform: capitalize;
+  color: #fe8e66;
+}
+
+/* styling the buttons */
+
+.nav-buttons {
+  width: 20%;
+}
+
+.nav-buttons button:nth-of-type(1) {
+  width: 110px;
+  height: 40px;
+  border: 2px solid #fe8e66;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-right: 30px;
+  text-transform: uppercase;
+  color: #fe8e66;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav-buttons button:nth-of-type(2) {
+  width: 115px;
+  height: 40px;
+  box-shadow: 0px 6px 20px rgba(254, 142, 102, 0.15);
+  background-color: #fe8e66;
+  border: 1.5px solid #fe8e66;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.nav-buttons button:nth-of-type(1):hover {
+  opacity: 0.4;
+}
+
+.nav-buttons button:nth-of-type(2):hover {
+  opacity: 0.4;
+}
+
+/* styling the first section */
+
+.first-section {
+  width: 50%px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.first-section .first-sectionTexts {
+  padding: 10px 0 0 70px;
+}
+
+.first-section .first-sectionTexts h1 {
+  color: #353535;
+  font-family: "PT Serif", sans-serif;
+  text-transform: capitalize;
+  font-size: 54px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 70px;
+  margin: 52px 0;
+  letter-spacing: 2px;
+}
+
+.first-section .first-sectionTexts h4 {
+  color: #353535;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: capitalize;
+  line-height: 39px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.first-section .first-sectionTexts ul {
+  padding-left: 17px;
+  margin-bottom: 50px;
+}
+
+.first-section .first-sectionTexts ul li {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  line-height: 29px;
+}
+
+.textButtons .food-items {
+  width: 261px;
+  height: 56px;
+  background-color: #fe8e66;
+  border: 1.5px solid #fe8e66;
+  border-radius: 5px;
+  box-shadow: 1px 8px 25px rgba(254, 142, 102, 0.2);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+
+.textButtons .food-items:hover {
+  opacity: 0.4;
+}
+
+.textButtons .cash {
+  width: 199px;
+  height: 56px;
+  background-color: inherit;
+  border: 2px solid #fe8e66;
+  border-radius: 5px;
+  filter: drop-shadow(0px 6px 20px rgba(254, 142, 102, 0.15));
+  order: 1;
+  color: #fe8e66;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin-left: 48px;
+}
+
+.textButtons .cash:hover {
+ opacity: 0.4;
+}
+
+.first-sectionImage img {
+  width: 784px;
+  height: 616px;
+  margin: 30px 0;
+}
+
+/* styling the second section */
+
+.second-section {
+  width: 100%;
+  height: 740px;
+  background-color: #ffffff;
+  display: flex;
+  margin-top: 30px;
+}
+
+.second-section .second-sectionImage {
+  width: 50%;
+  padding-left: 70px;
+}
+
+.second-section .second-sectionImage img:nth-of-type(1) {
+  position: relative;
+  top: 22%;
+  left: 12%;
+}
+
+.second-section .second-sectionImage img:nth-of-type(2) {
+  position: relative;
+  bottom: 55%;
+  left: 0;
+}
+
+.second-section .second-sectionTexts {
+  width: 50%;
+  margin: 10% auto;
+}
+
+.second-section .second-sectionTexts h2 {
+  text-transform: capitalize;
+  margin: 52px 0 52px 90px;
+  font-size: 40px;
+  font-family: "PT Serif", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #353535;
+  line-height: 52px;
+  letter-spacing: 2px;
+}
+
+.second-section .second-sectionTexts p {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 29px;
+  order: 1;
+  color: #353535;
+  margin: 52px 40px 52px 90px;
+  letter-spacing: 2px;
+}
+
+.second-section .second-sectionTexts button {
+  margin-left: 90px;
+  width: 261px;
+  height: 56px;
+  border: 2px solid #fe8e66;
+  border-radius: 5px;
+  background-color: #fe8e66;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+}
+
+.second-section .second-sectionTexts button:hover {
+  opacity: 0.4;
+}
+
+.third-section h2 {
+  text-align: center;
+  margin-top: 70px;
+  text-transform: capitalize;
+  color: #353535;
+  font-size: 42px;
+  font-family: "PT Serif", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 55px;
+  letter-spacing: 1px;
+}
+
+.third-section h5 {
+  color: #21312a;
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 15px;
+}
+
+.third-section ul {
+  padding: 20px 70px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.third-section ul li a {
+  text-decoration: none;
+  color: #aeb4ca;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.third-section ul li button {
+  width: 24px;
+  height: 24px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 4px 4px rgba(254, 142, 102, 0.08),
+    0px 4px 10px rgba(53, 53, 53, 0.06);
+  border: 1px solid #f0f0f0;
+  border-radius: 3px;
+}
+
+.third-section ul li button a img {
+  position: relative;
+  bottom: 1.5px;
+  left: 0;
+}
+
+.third-section ul li button:hover {
+  opacity: 0.4;
+}
+
+.third-section ul li a:hover {
+  color: #21312a;
+}
+
+hr {
+  opacity: 0.3;
+  width: 92%;
+  margin: 0 4.3% 40px 4.3%;
+}
+
+.fourth-section {
+  margin: 30px 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  grid-auto-rows: minmax(200px, auto);
+  column-gap: 110px;
+  row-gap: 50px;
+}
+
+.fourth-section figure figcaption {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.landing-body .fourth-sectionButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.landing-body .fourth-sectionButton button {
+  width: 422px;
+  height: 64px;
+  border: 2px solid #fe8e66;
+  border-radius: 5px;
+  background-color: #fe8e66;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 23px;
+  letter-spacing: 1px;
+}
+
+.landing-body .fourth-sectionButton button:hover {
+  opacity: 0.4;
+}
+
+footer {
+  width: 100%;
+  height: 317px;
+  background-color: #faf5f3;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  padding-top: 50px;
+}
+
+footer .first {
+  margin-right: 120px;
+}
+
+footer .first .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+footer .first .logo img:nth-of-type(2) {
+  position: relative;
+  bottom: 10px;
+  right: 15px;
+}
+
+footer .first .logo h4 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fe8e66;
+  vertical-align: super;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 34px;
+  letter-spacing: 1px;
+  position: relative;
+  right: 20px;
+}
+
+footer .first h6 {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 1px;
+  padding-left: 30px;
+  margin: 24px 0;
+}
+
+footer .first ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .first ul li {
+  list-style: none;
+  margin: 0 25px 24px 0;
+}
+
+footer .first ul li a:hover,
+footer .first ul li a:active,
+footer .first a:hover,
+footer .first a:active {
+  opacity: 0.4;
+}
+
+footer .first p,
+footer .first a {
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: 1px;
+  padding-left: 25px;
+  margin-bottom: 8px;
+  color: #353535;
+  text-decoration: none;
+}
+
+footer .second,
+footer .third {
+  margin-right: 70px;
+}
+
+footer .second h5,
+footer .third h5,
+footer .fourth h5 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 27px;
+  letter-spacing: 1px;
+  color: #353535;
+  margin-bottom: 18px;
+}
+
+footer .second a,
+footer .third a,
+footer .fourth a {
+  text-decoration: none;
+  display: block;
+  color: #353535;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 8px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+footer .second a:hover,
+footer .second a:active,
+footer .third a:hover,
+footer .third a:active,
+footer .fourth a:hover,
+footer .fourth a:active {
+  opacity: 0.4;
+}
